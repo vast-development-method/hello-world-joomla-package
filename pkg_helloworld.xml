@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="6.0" type="package" method="upgrade">
+	<name>PKG_HELLOWORLD</name>
+	<packagename>helloworld</packagename>
+	<version>6.0.0</version>
+	<creationDate>July 2026</creationDate>
+	<author>Llewellyn van der Merwe</author>
+	<authorEmail>joomla@vdm.io</authorEmail>
+	<authorUrl>https://io.vdm.dev/</authorUrl>
+	<copyright>Copyright (C) 2015 Llewellyn van der Merwe. All rights reserved.</copyright>
+	<copyrightyear>2015</copyrightyear>
+	<license>GNU General Public License version 2; see LICENSE</license>
+	<packager>Vast Development Method</packager>
+	<packagerurl>https://dev.vdm.io/</packagerurl>
+	<description>The Hello World component is the simplest component built with JCB and this package is for the MCP development of JCB.</description>
+	<scriptfile>install_helloworld.php</scriptfile>
+	<updateservers>
+		<server type="extension" name="Hello World - Updates" element="pkg_helloworld">https://raw.githubusercontent.com/vast-development-method/hello-world-joomla-component/refs/heads/6.x/update_server.xml</server>
+	</updateservers>
+	<changelogurl>https://raw.githubusercontent.com/vast-development-method/hello-world-joomla-component/refs/heads/6.x/changelog_server.xml</changelogurl>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB/en-GB.pkg_helloworld.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.pkg_helloworld.ini</language>
+	</languages>
+	<files folder="src">
+		<file type="component" id="com_helloworld">joomla__hello-world-joomla-component__6.x.zip</file>
+		<file type="plugin" id="plg_privacy_helloworld" group="privacy">joomla__hello-world-joomla-plugin__6.x.zip</file>
+	</files>
+</extension>
